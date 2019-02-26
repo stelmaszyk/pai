@@ -1,0 +1,8 @@
+body{
+	background-color: #a2dbff;
+}
+
+#ikona {
+	list-style-image: url(../img/ico_polska_glaga.png);
+	margin-left: 100px;
+}
