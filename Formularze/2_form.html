@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2. FOrmularze</title>
+    </head>
+    <body>
+		<form>
+			<input type="text" name="imie" autofocus autocomplete="off"><br>
+			<input type="password" name="haslo"><br>
+			<input type="number" name="liczba1" step="0.1"><br>
+			<input type="number" name="liczba2" step="10"><br>
+			Daty:
+			<input type="date"> <br>
+			<input type="time"> <br>
+			<input type="datetime-local"> <br>
+			<input type="week"><br>
+			<input type="month"><br>
+			<br>
+			Telefon:
+			<input type="tel"><br>
+			Kolor:
+			<input type="color"><br>
+			Zakres:
+			<input type="range" min="0" max="255" name="zakres"><br> <br>
+			<b>Lista: </b><br>
+				<label> Dzień Tygodnia: </label>
+				<input type="text" list="tydzien" name="lista">
+			<datalist id=tydzien>
+				<option value="Poniedziałek">
+				<option value="Wtorek">
+				<option value="Środa">
+				<option value="Czwartek">
+				<option value="Piątek">
+				<option value="Sobota">
+				<option value="Niedziela">
+			</datalist>
+			<input type="submit" value="wyślij">
+		</form>
+	</body>
+</html>
