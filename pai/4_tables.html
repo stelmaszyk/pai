@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabele</title>
+		<link rel="stylesheet" href="CSS/4_tabele.css">
+    </head>
+    <body>
+		<!-- Komentarz -->
+		<!-- Tabela -->
+		<table>
+			<tr> <!-- Table Row -->
+				<td>Imię</td> <!-- Table Date -->
+				<td>Nazwisko</td>
+				<td>Miasto</td>
+			</tr>
+			<tr>
+				<td>Jan</td>
+				<td>Nowak</td>
+				<td>Poznań</td>
+			</tr>
+			<tr>
+				<td>Anna</td>
+				<td>Kowalczyk</td>
+				<td>Szczecin</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		<br> <hr>
+		<!-- Tabela z nagłowkami -->
+		<table border="1"> <!-- border - grubość obramowania -->
+			<tr>
+				<th>Nagłowek 1</th> <!-- Table header -->
+				<th>Nagłowek 2</th>
+				<th>Nagłowek 3</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+		</table>
+		<hr>
+		<!-- Tabela zdjęcia -->
+		<table>
+			<tr>
+				<td><img src="img/wsb.jpg"></td>
+				<td><img src="img/a350.jpg"></td>
+			</tr>
+			<tr>
+				<td><img src="img/a350.jpg"></td>
+				<td><img src="img/wsb.jpg"></td>
+			</tr>
+		</table>
+		<hr>
+
+		<!-- Naglowki -->
+		<table id="tabela4">
+			<tr>
+				<th></th>
+				<th>Naglowek 1. kolumny</th>
+				<th>Naglowek 2. kolumny</th>
+
+			</tr>
+			<tr>
+				<th>Naglowek 1. wiersza</th>
+				<td>Dane 1</td>
+				<td><center>Dane 2</center></td>
+			</tr><tr>
+				<th>Naglowek 2. wiersza</th>
+				<td>Dane 1</td>
+				<td><b>Dane 2</b></td>
+			</tr>
+		</table>
+		<hr>
+		<!-- Tabela 5 -->
+		<h1><b><i><font color="red"> ZWRÓĆ NA TO UWAGĘ</font></i></b></h1>
+		<table>
+			<tr>
+				<th></th>
+				<th scope="col">Nagłowek 1. kolumny</th> <!-- określenie jaki zakres obejmuje ten nagłowek -->
+				<th scope="col">Naglowek 2. kolumny</th>
+			</tr>
+			<tr>
+				<th scope="row">Nagłowek 1. wiersza</th>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">Nagłowek 2. wiersza</th>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+		<hr>
+		<center><h1>Łączenie kolumn</h1></center>
+		<table>
+			<tr>
+				<th></th>
+				<th scope="col">Poniedziałek</th>
+				<th scope="col">Wtorek</th>
+				<th scope="col">Środa</th>
+			</tr>
+			<tr>
+				<th scope="row">15:00</th>
+				<td>Zapasy</td>
+				<td>Street workout</td>
+				<td>Judo</td>
+			</tr>
+			<tr>
+				<th scope="row">16:00</th>
+				<td colspan="3">Boks</td> <!-- colspan - ilość komorek do połączenia -->
+			</tr>
+			<tr>
+				<th scope="row">17:00</th>
+				<td>UFC</td>
+				<td colspan="2">FameMMA</td>
+			</tr>
+		</table>
+		<hr>
+		<center><font color="red" type="Arial"><h1>Łączenie wierszy</h1></font></center>
+		<table>
+			<tr>
+				<td>1 komorka</td>
+				<td>2 komorka</td>
+				<td>3 komorka</td>
+			</tr>
+			<tr>
+				<td rowspan="2">4 komorka</td>
+				<td>5 komorka</td>
+				<td>6 komorka</td>
+			</tr>
+			<tr>
+				<td>8 komorka</td>
+				<td>9 komorka</td>
+			</tr>
+		</table>
+		<hr> <br> <hr>
+		<center><font color="red"><h1>Zadanie domowe</h1></font></center>
+		<center><font color="red"><h2>Jest na zdjęciu. </h2></font></center>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<th>Zmienna a</th>
+					<th>Zmienna b</th>
+					<th>suma</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td>24</td>
+					<td>655</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>100</td>
+					<td>123</td>
+					<td>246</td>
+				</tr>
+			</tfoot>
+		</table>
+		<hr>
+		<h1>Tabela - zadanie domowe. </h1>
+
+    </body>
+</html>

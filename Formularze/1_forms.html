@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularze</title>
+    </head>
+    <body>
+		<h3> Formularz metodą GET</h3>
+		<!-- method get/post -->
+		<form method="get">
+			<label for="login">Login:<!-- etykieta -->
+				<input type="text" name="login" id="login" placeholder="Login"> <!-- placeholder - tekst przykladowy --></label>
+			<br>
+			<label for="haslo">Hasło:
+			<input type="password" name="haslo" id="haslo" placeholder="Hasło">
+			</label>
+			<input type="submit" name="przycisk" id="przycisk" > <!-- metoda GET, domyslna dla <FORM> -->
+			<br> Zauważ, że w adresie pojawia się hasło i login!
+		</form>
+		<br>
+		<h3>Formularz metodą Post</h3>
+		<form method="post">
+			<label for="login">Login:<!-- etykieta -->
+				<input type="text" name="login" id="login" placeholder="Login"> <!-- placeholder - tekst przykladowy --></label>
+			<br>
+
+			<label for="haslo">Hasło:
+			<input type="password" name="haslo" id="haslo" placeholder="Hasło">
+			</label>
+			<input type="submit" name="przycisk" id="przycisk" > <!-- metoda POST -->
+			<br> Zauważ, że w adresie nic się nie pojawi!
+		</form>
+		<br> <hr>
+		<fieldset>
+			<legend>Wybory</legend>
+			<form action="./1.1_form_glosowanie.html" method="get">
+				<input type="text" name="nick" placeholder="nick"> <br>
+				<input type="radio" name="kandydat1" value="Kowal">Kowal
+				<input type="radio" name="kandydat1" value="N">Nowak
+				<input type="radio" name="kandydat1" value="P">Pawlak
+				<input type="radio" name="kandydat1" value="T">Tomczak
+				<!-- aby można było wybrać jedną opcje, radiobutton musi mięć wszędzie tę samą nazwę! -->
+				<br>
+				<input type="submit" name="przycisk" value="Zagłosuj">
+
+			</form>
+		</fieldset>
+		<hr>
+		<form action="./1.1_form_glosowanie.html" method="post">
+			<input
+				   type = "text"
+				   name = "imie"
+				   id = "imie"
+				   placeholder = "Imię"
+				   title = "Podaj swoje imię, możesz wprowadzić tylko  małe litery. "
+				   pattern = "[a-z] {2, 15}"
+				   required autofocus> <!-- autofocus - od razu kursor tu wchodzi -->
+			 <br> <!-- pattern -> duze i male litery, minimum 2 znaki, maksymalnie 15 znakow -->
+			<input type="text" name="nazwisko" placeholder="nazwisko" required><br>
+			<input type="email" name="mail" placeholder="przykladowy@w.com" required><br>
+			<input type="number" name="wiek" placeholder="wiek"><br>
+			<input type="radio" name="kraj" value="p" checked>Polska
+			<input type="radio" name="kraj" value="u">Ukraina
+			<input type="radio" name="kraj" value="a">Anglia <br>
+			<input type="submit" name="zaglosuj">
+		</form>
+		<br><hr><br><hr>
+		<form method="post">
+			<p>
+				Nazwa użytkownika:
+				<input type="text" name="login" required> <br>
+				Hasło: <input type="password" name="pass" required> <br>
+				<input type=submit>
+			</p>
+		</form>
+    </body>
+</html>
