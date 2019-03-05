@@ -10,7 +10,7 @@
 			<input type="password" name="haslo"><br>
 			<input type="number" name="liczba1" step="0.1"><br>
 			<input type="number" name="liczba2" step="10"><br>
-			Daty:
+			Daty: <br>
 			<input type="date"> <br>
 			<input type="time"> <br>
 			<input type="datetime-local"> <br>
@@ -24,7 +24,7 @@
 			Zakres:
 			<input type="range" min="0" max="255" name="zakres"><br> <br>
 			<b>Lista: </b><br>
-				<label> Dzień Tygodnia: </label>
+				<label> Dzień Tygodnia: </label> <br>
 				<input type="text" list="tydzien" name="lista">
 			<datalist id=tydzien>
 				<option value="Poniedziałek">
@@ -35,7 +35,21 @@
 				<option value="Sobota">
 				<option value="Niedziela">
 			</datalist>
-			<input type="submit" value="wyślij">
+
+			<br><br>
+			<b>Wyrażenia regularne: </b><br>
+			PESEL: <br>
+			<input type="text" name="pesel" pattern="[0-9]{11}" ><br>
+			<input type="text" name="kod_pocztowy" pattern="\d{2}-\d{3}" readonly placeholder="Pole nieaktywne"> <br> <!--nieprawidlowe! -->
+			<input type="text" name="kod_pocztowy" pattern="^\d{2}-\d{3}$"><br>
+			<br>
+			<br> Hasło:
+			<!-- min. i znakow, 1 duza litera, jedna mala litera, cyfra -->
+			<input type="text" name="haslo" pattern="(?=.*[A=Z])(?=.*[a-z])(?=.*\d).{8,}" required> <br>
+			<input type="submit" name="przycisk" value="wyślij">
+			<!-- <input type="submit" value="Wyslij" formtarget="_blank" formnovalidate> -->
+
+			<h1> Utworz wyrażenia regularne do pol: telefon (warianty ze spacjami, myślnikami i bez) , adres IP (z kropkami, przedział 0-255) </h1>
 		</form>
 	</body>
 </html>
