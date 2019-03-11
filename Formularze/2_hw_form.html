@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Struktura</title>
+</head>
+
+<body>
+    <h1> Utworz wyrażenia regularne do pol: telefon (warianty ze spacjami, myślnikami i bez) , adres IP (z kropkami, przedział 0-255) </h1>
+    <br>
+    Nr Telefonu: <br>
+    <input type="text" name="nr_tel" pattern="[0-9]{9}" required><br>
+    <br>
+    Adres IP:  <!-- rozwiązanie leniwe -->
+    <br><h1>Rozwiązanie leniwe :p</h1>
+    <input type="number" min="0" max="255" readonly>.<input type="number" min="0" max="255" readonly>.<input type="number" min="0" max="255" readonly>.<input type="number" min="0" max="255" readonly> <br>
+    <br><h1>A teraz na poważnie... :) </h1> <br>
+    <input type="number" name="adres_IP" pattern="\d{3}.\d{3}.\d{3}.\d{3}" min="0.0.0.0.0" max="255.255.255.255" placeholder="np. 192.168.8.1" required>
+    <h3>Nadal nie jestem pewien czy o to chodziło</h3>
+    <br>
+    <h4>Zastanawiałem się nad połączeniem pól j/w, ale to w jQuery chyba musiałbym zrobić;</h4>
+    <input type="submit" name="submit" value="Wyślij">
+</body>
+
+</html>
