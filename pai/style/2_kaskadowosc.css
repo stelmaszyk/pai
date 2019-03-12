@@ -25,9 +25,9 @@ p b {
 }
 
 p#opis {
-  font-size: 150%;
+  font-size: 150%; /* zadziała na akapity o nazwie OPIS */
 }
 
 p {
-  font-size: 30%;
+  font-size: 30%; /* zadziałą tylko na akapity bez nazwy! */
 }

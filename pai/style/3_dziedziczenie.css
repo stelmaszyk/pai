@@ -1,0 +1,42 @@
+body {
+  background-color: silver;
+  font-family: fantasy;
+  color: rgba(255, 0, 0, 0.5);
+  padding: 20px; /* MARGINES Wewnętrzny, margin - zewnętrzny */
+}
+
+h1 {
+  color: darkcyan;
+  margin: 15px;
+  padding: 20px;
+  background-color: red;
+}
+
+h2 {
+  background-color: rgba(0, 0, 255, 0.2);
+  margin: 0px;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+}
+
+p {
+  background-color: grey;;
+  color: black;
+}
+
+.strona {
+  border: 2px solid black;
+  background-color: #00ff00;
+  padding: inherit; /*dziedziczy po body */
+}
+
+.trzyPokoje {
+  background-color: hsl(120, 100%, 50%);
+}
+/*
+  Odcień: 0-360 stopni
+  Nasycenie jest wyrażane w procentach
+  Jasnosć w procentach --> 0% - biały. 50% - kolor normalny. 100% - kolor czarny
+   */
