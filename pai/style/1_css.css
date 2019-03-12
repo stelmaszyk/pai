@@ -1,0 +1,62 @@
+p {
+  /* color: rgb(255, 0, 0); */
+  color: rgba(255, 0, 0, 0.7); /* 0 - przejrzysty, 0.5 50% przejrzystości, 1 - nieprzejrzysty */
+}
+
+#wzgorza {
+  color: rgb(25, 142, 241);
+}
+
+h1, h4 {
+  color: rgb(60, 120, 90);
+  font-family: "Comic Sans MS";
+}
+
+a:link {
+  color: yellow;
+  text-decoration: none;
+  margin: 5px;
+  font-family: "Courier New";
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  /* Co się dzieje po najechaniu na link */
+  color: black;
+  cursor: crosshair;
+  text-decoration: underline;
+}
+
+a:active {
+  color: cyan;
+  background-color: hotpink;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: white;
+  /* jak parametry się wykluczają, to wtedy bierze ostatnie */
+}
+
+/* Selektor elementu dziecka.  */
+
+ul > a:link {
+  color: black;
+}
+
+/* Selektor elementu potomnego */
+h1 a:link {
+  color: rgb(0, 200, 140);
+}
+
+/* Selektor elementu sąsiadującego bezpośrednio */
+
+h4 +  p {
+  color: blue;
+}
