@@ -1,0 +1,21 @@
+zapytanie 1: wybierające jedynie pola imie, telefon, szczepienie, opis z tabeli Zwierzeta
+
+SELECT imie, telefon, szczepienie, opis from zwierzeta
+
+
+Zapytanie 2: wybierające jedynie pola id, imie, wlasciciel z tabeli Zwierzeta dla tych rekordów, dla których rodzaj to pies
+
+select id, imie, wlasciciel from zwierzeta where rodzaj='1'
+
+
+Zapytanie 3:
+ korzystające z relacji i wybierające jedynie pola imie z tabeli Zwierzeta oraz odpowiadające im pola nazwa z tabeli Uslugi
+
+select zwierzeta.imie, uslugi.nazwa FROM zwierzeta INNER JOIN uslugi ON zwierzeta.usluga_id=uslugi.id
+select z.imie, u.nazwa FROM zwierzeta INNER JOIN uslugi ON z.usluga_id=u.id  <-- aliasy
+
+
+ Zadanie 4
+ zwracające średnią cenę wszystkich usług zapisanych w tabeli Uslugi
+select AVG(cena) from uslugi
+select AVG(cena) as 'srednia cena' from uslugi where 1
